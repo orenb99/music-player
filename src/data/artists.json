@@ -1,9 +1,30 @@
 [
   {
-    "name": "artist",
-    "albums": [],
+    "name": "Arctic Monkeys",
+    "albums": ["Favorite Worst Nightmare", "AM"],
     "selected": [],
-    "cover": "img",
-    "views":500
+    "cover": "arctic-monkeys",
+    "views": 354564620
+  },
+  {
+    "name": "Green day",
+    "albums": ["American Idiot", "21st Century Breakdown"],
+    "selected": [],
+    "cover": "green-day",
+    "views": 13413535
+  },
+  {
+    "name": "Eminem",
+    "albums": ["The Marshall Mathers LP", "Encore"],
+    "selected": [],
+    "cover": "eminem",
+    "views": 45205200
+  },
+  {
+    "name": "Starset",
+    "albums": ["Vessels", "Divisions"],
+    "selected": [],
+    "cover": "eminem",
+    "views": 45205200
   }
 ]

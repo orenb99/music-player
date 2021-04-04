@@ -1,9 +1,52 @@
 [
   {
-    "name": "album",
-    "artist": "artist",
-    "songs": [],
-    "cover": "img",
-    "views": 500
+    "name": "AM",
+    "artist": "Arctic Monkeys",
+    "songs": [
+      "Do I Wanna Know?",
+      "R U Mine?",
+      "Why'd You Only Call Me When You're High?",
+      "I Wanna Be Yours"
+    ],
+    "cover": "AM",
+    "views": 10000000
+  },
+  {
+    "name": "Favorite Worst Nightmare",
+    "artist": "Arctic Monkeys",
+    "songs": ["505", "Fluorescent Adolescent", "Brianstorm", "Teddy Picker"],
+    "cover": "FWN",
+    "views": 10000000
+  },
+  {
+    "name": "Encore",
+    "artist": "Eminem",
+    "songs": [
+      "Mockingbird",
+      "Like Toy Soliders",
+      "Just Lose It",
+      "When I'm Gone"
+    ],
+    "cover": "encore",
+    "views": 10000000
+  },
+  {
+    "name": "The Marshal Mathers LP",
+    "artist": "Eminem",
+    "songs": ["The Way I Am", "Stan", "The Real Slim Shady", "Kill You"],
+    "cover": "TMMLP",
+    "views": 10000000
+  },
+  {
+    "name": "American idiot",
+    "artist": "Green day",
+    "songs": [
+      "American Idiot",
+      "Holiday",
+      "Boulevard Of Broken Dreams",
+      "Wake Me Up When September Ends"
+    ],
+    "cover": "american-idiot",
+    "views": 2000000
   }
 ]

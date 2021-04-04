@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Playlist = () => (
+const Playlist = ({ match }) => (
   <div>
-    <h1>Playlist</h1>
+    <h1>Playlist {match.params.name}</h1>
   </div>
 );
 
