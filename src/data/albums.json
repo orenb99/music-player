@@ -48,5 +48,19 @@
     ],
     "cover": "american-idiot",
     "views": 2000000
+  },
+  {
+    "name": "Vessels",
+    "artist": "Starset",
+    "songs": ["Monster", "Die For You", "Unbecoming", "Ricochet"],
+    "cover": "vessels",
+    "views": 2000000
+  },
+  {
+    "name": "Divisions",
+    "artist": "Starset",
+    "songs": ["Echo", "Faultline", "Manifest", "Trials"],
+    "cover": "divisions",
+    "views": 2000000
   }
 ]

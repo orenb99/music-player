@@ -5,6 +5,9 @@ import arcticMonkeys from "./arctic-monkeys.png";
 import eminem from "./eminem.png";
 import TMMLP from "./TMMLP.png";
 import FWN from "./FWN.png";
+import starset from "./starset.png";
+import vessels from "./vessels.png";
+import divisions from "./divisions.png";
 import greenDay from "./green-day.png";
 
 const albumImgs = [
@@ -28,6 +31,14 @@ const albumImgs = [
     name: "american-idiot",
     img: americanIdiot,
   },
+  {
+    name: "divisions",
+    img: divisions,
+  },
+  {
+    name: "vessels",
+    img: vessels,
+  },
 ];
 const artistImgs = [
   {
@@ -41,6 +52,10 @@ const artistImgs = [
   {
     name: "eminem",
     img: eminem,
+  },
+  {
+    name: "starset",
+    img: starset,
   },
 ];
 const playlistImgs = [];
