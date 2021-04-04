@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Nav = () => (
+const Home = () => (
   <div>
-    <h1>Nav</h1>
+    <h1>Home</h1>
   </div>
 );
 
-export default Nav;
+export default Home;
