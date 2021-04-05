@@ -4,13 +4,12 @@ import ArtistList from "./Lists/ArtistList";
 import PlaylistList from "./Lists/PlaylistList";
 import AlbumList from "./Lists/AlbumList";
 import { Link } from "react-router-dom";
+import List from "./Lists/List";
 
 const Home = () => (
   <div>
-    <SongList />
-    <AlbumList />
-    <ArtistList />
-    <PlaylistList />
+    <List type={"albums"} />
+    <List type={"artists"} />
   </div>
 );
 
