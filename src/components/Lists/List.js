@@ -12,10 +12,6 @@ function topFive(list) {
   viewsArray = viewsArray.slice(0, 5);
   return list.filter((value) => viewsArray.includes(value.views));
 }
-function findCoverBySong(song) {
-  let album = albums.find((value) => value.name === song.album);
-  return albumImgs.find((value) => value.name === album.cover).img;
-}
 
 const List = ({ type }) => {
   let typeList = [];
@@ -47,7 +43,11 @@ const List = ({ type }) => {
             className={`${type}-cover`}
             src={
               type === "songs"
-                ? findCoverBySong(item)
+                ? albumImgs.find(
+                    (value) =>
+                      value.name ===
+                      albums.find((value) => value.name === item.album).cover
+                  ).img
                 : imgArr[nameArr.indexOf(item.cover)].img
             }
             alt={item.name}
