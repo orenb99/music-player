@@ -6,14 +6,14 @@ import topFive from "../../utils";
 const PlaylistNav = () => {
   const topPlaylists = topFive(playlists);
   return (
-    <nav className={`navbar playlist`}>
+    <div className={`list container`}>
       <h1>{"playlists"}</h1>
       {topPlaylists.map((item) => (
         <Link to={`/playlist/${item.name}`} key={item.name}>
           <h1>{item.name}</h1>
         </Link>
       ))}
-    </nav>
+    </div>
   );
 };
 

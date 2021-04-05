@@ -1,16 +1,16 @@
 import React from "react";
-import SongNav from "./Navbars/SongNav";
-import ArtistNav from "./Navbars/ArtistNav";
-import PlaylistNav from "./Navbars/PlaylistNav";
-import AlbumNav from "./Navbars/AlbumNav";
+import SongList from "./Lists/SongList";
+import ArtistList from "./Lists/ArtistList";
+import PlaylistList from "./Lists/PlaylistList";
+import AlbumList from "./Lists/AlbumList";
 import { Link } from "react-router-dom";
 
 const Home = () => (
   <div>
-    <SongNav />
-    <AlbumNav />
-    <ArtistNav />
-    <PlaylistNav />
+    <SongList />
+    <AlbumList />
+    <ArtistList />
+    <PlaylistList />
   </div>
 );
 

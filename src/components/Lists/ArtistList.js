@@ -8,7 +8,7 @@ const ArtistNav = () => {
   const topArtists = topFive(artists);
   let nameArr = artistImgs.map((value) => value.name);
   return (
-    <nav className={`navbar artists`}>
+    <div className={`artists container`}>
       <h1>{"artists"}</h1>
       {topArtists.map((item) => (
         <Link to={`/artist/${item.name}`} key={item.name}>
@@ -19,7 +19,7 @@ const ArtistNav = () => {
           />
         </Link>
       ))}
-    </nav>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import topFive from "../../utils";
 const SongNav = () => {
   const topSongs = topFive(songs);
   return (
-    <nav className={`navbar songs`}>
+    <div className={`songs container`}>
       <h1>{"songs"}</h1>
       {topSongs.map((item) => (
         <iframe
@@ -20,7 +20,7 @@ const SongNav = () => {
           allowFullScreen
         />
       ))}
-    </nav>
+    </div>
   );
 };
 
