@@ -39,11 +39,21 @@ const List = ({ type }) => {
           to={`/${type.slice(0, type.length - 1)}/${item.name}`}
           key={item.name}
         >
-          <img
+          {/* <img
             className={`${type}-cover`}
-            src={imgArr[nameArr.indexOf(item.cover)].img}
+            src={
+              type === "songs"
+                ? imgArr[
+                    nameArr.indexOf(
+                      albums.find((value) => value.name === item.album).cover
+                    )
+                  ].img
+                : imgArr[nameArr.indexOf(item.cover)].img
+            }
             alt={item.name}
-          />
+          /> */}
+          {/* {console.log(albums.find((value) => value.name === item.album))} */}
+          {console.log(item.album)}
         </Link>
       ))}
     </div>

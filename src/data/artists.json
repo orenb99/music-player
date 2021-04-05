@@ -13,7 +13,7 @@
   },
   {
     "name": "Green day",
-    "albums": ["American Idiot", "21st Century Breakdown"],
+    "albums": ["American Idiot"],
     "selected": [
       "Boulevard Of Broken Dreams",
       "Wake Me Up When September Ends"

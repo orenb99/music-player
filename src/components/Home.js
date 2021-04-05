@@ -8,8 +8,9 @@ import List from "./Lists/List";
 
 const Home = () => (
   <div>
-    <List type={"albums"} />
     <List type={"artists"} />
+    <List type={"albums"} />
+    <List type={"songs"} />
   </div>
 );
 
