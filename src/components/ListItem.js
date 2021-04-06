@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ListItem = ({ type, item, getImage }) => {
-  {
-    console.log(item.ID);
-  }
   return (
     <div className={`list-item ${type}`}>
       <Link

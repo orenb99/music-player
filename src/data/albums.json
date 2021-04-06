@@ -8,13 +8,15 @@
       "Why'd You Only Call Me When You're High?",
       "I Wanna Be Yours"
     ],
-    "cover": "AM"
+    "cover": "AM",
+    "ID": "OLAK5uy_nw2f8Y7rbxFKNaDHwD7LRi0nvPNcT_bB8"
   },
   {
     "name": "Favorite Worst Nightmare",
     "artist": "Arctic Monkeys",
     "songs": ["505", "Fluorescent Adolescent", "Brianstorm", "Teddy Picker"],
-    "cover": "FWN"
+    "cover": "FWN",
+    "ID": "OLAK5uy_nA-26T5qczv0yg9mBER9O-0hr5jMgwA6U"
   },
   {
     "name": "Encore",
@@ -25,13 +27,15 @@
       "Just Lose It",
       "When I'm Gone"
     ],
-    "cover": "encore"
+    "cover": "encore",
+    "ID": "OLAK5uy_nQY-UERFpsL1d5UTPVMjX7mtnVlKg7D4w"
   },
   {
     "name": "The Marshall Mathers LP",
     "artist": "Eminem",
     "songs": ["The Way I Am", "Stan", "The Real Slim Shady", "Kill You"],
-    "cover": "TMMLP"
+    "cover": "TMMLP",
+    "ID": "OLAK5uy_lD5szk37WYrgQwlKKDQt6FfYgP9T_bgEg"
   },
   {
     "name": "American idiot",
@@ -42,18 +46,21 @@
       "Boulevard Of Broken Dreams",
       "Wake Me Up When September Ends"
     ],
-    "cover": "american-idiot"
+    "cover": "american-idiot",
+    "ID": "OLAK5uy_mmM6IEvxyWMmJhYOVc3YyFUH7espfFHP4"
   },
   {
     "name": "Vessels",
     "artist": "Starset",
     "songs": ["Monster", "Die For You", "Unbecoming", "Ricochet"],
-    "cover": "vessels"
+    "cover": "vessels",
+    "ID": "OLAK5uy_mvFzbQkbvghCwbIgWOikAt3zb9uNqpSig"
   },
   {
     "name": "Divisions",
     "artist": "Starset",
     "songs": ["Echo", "Faultline", "Manifest", "Trials"],
-    "cover": "divisions"
+    "cover": "divisions",
+    "ID": "OLAK5uy_lF6W1rcIF9vMrtCw0vZBbaHGrWWFx0VxI"
   }
 ]
