@@ -41,6 +41,16 @@ const List = ({ type }) => {
       else setTypeList(albums);
     }
   }, []);
+
+  function getImage(type, item) {
+    if (type === "songs") {
+      return imgArr.find(
+        (value) =>
+          value.name === albums.find((value) => value.name === item.album).cover
+      ).img;
+    } else return imgArr.find((value) => value.name === item.cover).img;
+  }
+
   return (
     <div className={`${type} container`}>
       <h1>{type}</h1>
@@ -51,15 +61,7 @@ const List = ({ type }) => {
         >
           <img
             className={`${type}-cover`}
-            src={
-              type === "songs"
-                ? imgArr.find(
-                    (value) =>
-                      value.name ===
-                      albums.find((value) => value.name === item.album).cover
-                  ).img
-                : imgArr.find((value) => value.name === item.cover).img
-            }
+            src={getImage(type, item)}
             alt={item.name}
           />
         </Link>
