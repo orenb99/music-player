@@ -26,13 +26,13 @@
     "albums": ["The Marshall Mathers LP", "Encore"],
     "selected": ["Stan", "Mockingbird", "When I'm Gone", "The Real Slim Shady"],
     "cover": "eminem",
-    "views": 45205200
+    "views": 452052000
   },
   {
     "name": "Starset",
     "albums": ["Vessels", "Divisions"],
     "selected": ["Faultline", "Monster", "Unbecoming", "Echo"],
     "cover": "starset",
-    "views": 45205200
+    "views": 100000
   }
 ]

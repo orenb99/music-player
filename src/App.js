@@ -4,6 +4,7 @@ import Artist from "./components/Artist";
 import Song from "./components/Song";
 import Playlist from "./components/Playlist";
 import Home from "./components/Home";
+import "./styles/app.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 

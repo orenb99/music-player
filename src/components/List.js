@@ -1,32 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import songs from "../../data/songs.json";
-import playlists from "../../data/playlists.json";
-import artists from "../../data/artists.json";
-import albums from "../../data/albums.json";
-import { artistImgs, albumImgs, playlistImgs } from "../../data/imgs/imgArray";
+import songs from "../data/songs.json";
+import playlists from "../data/playlists.json";
+import artists from "../data/artists.json";
+import albums from "../data/albums.json";
+import { artistImgs, albumImgs, playlistImgs } from "../data/imgs/imgArray";
 
 function topFive(list) {
-  let viewsArray = list.map((item) => item.views);
-  viewsArray.sort((a, b) => b - a);
-  viewsArray = viewsArray.slice(0, 5);
-  return list.filter((value) => viewsArray.includes(value.views));
+  list.sort((a, b) => b.views - a.views);
+  return list.slice(0, 5);
 }
 
 const List = ({ type }) => {
   let typeList = [];
-  let nameArr = [];
   let imgArr = [];
   if (type === "artists") {
     typeList = artists;
-    nameArr = artistImgs.map((value) => value.name);
     imgArr = artistImgs;
   } else if (type === "playlists") {
     imgArr = playlistImgs;
     typeList = playlists;
-    nameArr = playlistImgs.map((value) => value.name);
   } else {
-    nameArr = albumImgs.map((value) => value.name);
     imgArr = albumImgs;
     if (type === "songs") typeList = songs;
     else typeList = albums;
@@ -34,7 +28,7 @@ const List = ({ type }) => {
   return (
     <div className={`${type} container`}>
       <h1>{type}</h1>
-      {typeList.map((item) => (
+      {topFive(typeList).map((item) => (
         <Link
           to={`/${type.slice(0, type.length - 1)}/${item.name}`}
           key={item.name}
@@ -43,12 +37,12 @@ const List = ({ type }) => {
             className={`${type}-cover`}
             src={
               type === "songs"
-                ? albumImgs.find(
+                ? imgArr.find(
                     (value) =>
                       value.name ===
                       albums.find((value) => value.name === item.album).cover
                   ).img
-                : imgArr[nameArr.indexOf(item.cover)].img
+                : imgArr.find((value) => value.name === item.cover).img
             }
             alt={item.name}
           />

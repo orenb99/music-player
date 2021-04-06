@@ -9,14 +9,14 @@
       "I Wanna Be Yours"
     ],
     "cover": "AM",
-    "views": 10000000
+    "views": 123123
   },
   {
     "name": "Favorite Worst Nightmare",
     "artist": "Arctic Monkeys",
     "songs": ["505", "Fluorescent Adolescent", "Brianstorm", "Teddy Picker"],
     "cover": "FWN",
-    "views": 10000000
+    "views": 234234
   },
   {
     "name": "Encore",
@@ -28,14 +28,14 @@
       "When I'm Gone"
     ],
     "cover": "encore",
-    "views": 10000000
+    "views": 234523
   },
   {
     "name": "The Marshall Mathers LP",
     "artist": "Eminem",
     "songs": ["The Way I Am", "Stan", "The Real Slim Shady", "Kill You"],
     "cover": "TMMLP",
-    "views": 10000000
+    "views": 1234534
   },
   {
     "name": "American idiot",
@@ -47,20 +47,20 @@
       "Wake Me Up When September Ends"
     ],
     "cover": "american-idiot",
-    "views": 2000000
+    "views": 1234524
   },
   {
     "name": "Vessels",
     "artist": "Starset",
     "songs": ["Monster", "Die For You", "Unbecoming", "Ricochet"],
     "cover": "vessels",
-    "views": 2000000
+    "views": 235435345
   },
   {
     "name": "Divisions",
     "artist": "Starset",
     "songs": ["Echo", "Faultline", "Manifest", "Trials"],
     "cover": "divisions",
-    "views": 2000000
+    "views": 123435
   }
 ]
