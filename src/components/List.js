@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import songs from "../data/songs.json";
 import playlists from "../data/playlists.json";
@@ -10,21 +10,37 @@ function topFive(list) {
   list.sort((a, b) => b.views - a.views);
   return list.slice(0, 5);
 }
-
-const List = ({ type }) => {
-  let typeList = [];
-  let imgArr = [];
-  if (type === "artists") {
-    typeList = artists;
-    imgArr = artistImgs;
-  } else if (type === "playlists") {
-    imgArr = playlistImgs;
-    typeList = playlists;
-  } else {
-    imgArr = albumImgs;
-    if (type === "songs") typeList = songs;
-    else typeList = albums;
+function calcViews(type) {
+  let list;
+  if (type === "albums") list = albums;
+  else if (type === "artists") list = artists;
+  for (let item of list) {
+    let filteredSongs = songs.filter(
+      (value) => value[type.slice(0, type.length - 1)] === item.name
+    );
+    item.views = filteredSongs
+      .map((value) => value.views)
+      .reduce((acc, current) => acc + current);
   }
+}
+const List = ({ type }) => {
+  const [typeList, setTypeList] = useState([]);
+  const [imgArr, setImgArr] = useState([]);
+  useEffect(() => {
+    calcViews("artists");
+    calcViews("albums");
+    if (type === "artists") {
+      setTypeList(artists);
+      setImgArr(artistImgs);
+    } else if (type === "playlists") {
+      setImgArr(playlistImgs);
+      setTypeList(playlists);
+    } else {
+      setImgArr(albumImgs);
+      if (type === "songs") setTypeList(songs);
+      else setTypeList(albums);
+    }
+  }, []);
   return (
     <div className={`${type} container`}>
       <h1>{type}</h1>

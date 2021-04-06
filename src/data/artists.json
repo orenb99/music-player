@@ -8,8 +8,7 @@
       "R U Mine?",
       "Fluorescent Adolescent"
     ],
-    "cover": "arctic-monkeys",
-    "views": 354564620
+    "cover": "arctic-monkeys"
   },
   {
     "name": "Green day",
@@ -18,21 +17,18 @@
       "Boulevard Of Broken Dreams",
       "Wake Me Up When September Ends"
     ],
-    "cover": "green-day",
-    "views": 13413535
+    "cover": "green-day"
   },
   {
     "name": "Eminem",
     "albums": ["The Marshall Mathers LP", "Encore"],
     "selected": ["Stan", "Mockingbird", "When I'm Gone", "The Real Slim Shady"],
-    "cover": "eminem",
-    "views": 452052000
+    "cover": "eminem"
   },
   {
     "name": "Starset",
     "albums": ["Vessels", "Divisions"],
     "selected": ["Faultline", "Monster", "Unbecoming", "Echo"],
-    "cover": "starset",
-    "views": 100000
+    "cover": "starset"
   }
 ]
