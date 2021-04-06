@@ -42,19 +42,17 @@ const List = ({ type }) => {
     }
   }, []);
 
-  function getImage(type, item) {
-    let copy = { ...item };
-    if (type === "songs")
-      copy = albums.find((value) => value.name === copy.album);
-    return imgArr.find((value) => value.name === copy.cover).img;
-  }
-
   return (
     <div className={`${type} container`}>
       <h1>{type}</h1>
       <div className={`${type} list`}>
         {topFive(typeList).map((item) => (
-          <ListItem item={item} type={type} getImage={getImage} />
+          <ListItem
+            item={item}
+            type={type}
+            imgArr={imgArr}
+            getImage={getImage}
+          />
         ))}
       </div>
     </div>

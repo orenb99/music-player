@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ListItem = ({ type, item, getImage }) => {
+const ListItem = ({ type, item, imgArr, getImage }) => {
   return (
     <div className={`list-item ${type}`}>
       <Link
@@ -11,7 +11,7 @@ const ListItem = ({ type, item, getImage }) => {
       >
         <img
           className={`${type} cover`}
-          src={getImage(type, item)}
+          src={getImage(type, item, imgArr)}
           alt={item.name}
         />
         <br />
@@ -19,13 +19,13 @@ const ListItem = ({ type, item, getImage }) => {
       </Link>
 
       {type === "songs" && (
-        <Link className={"link"} to={`/album/${item.album}`}>
+        <Link className={"link"} to={`/album/${item.ID}`}>
           <br />
           <h4>{item.album}</h4>
         </Link>
       )}
       {(type === "albums" || type === "songs") && (
-        <Link className={"link"} to={`/artist/${item.artist}`}>
+        <Link className={"link"} to={`/artist/${item.ID}`}>
           <br /> <h4>{item.artist}</h4>
         </Link>
       )}
