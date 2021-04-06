@@ -2,19 +2,15 @@
   width: 240px;
   height: 240px;
 }
-
 .artists-cover {
   width: 240px;
   height: 240px;
   border-radius: 50%;
 }
-
 .link {
   text-decoration: none;
   color: unset;
+  & > h4 {
+    display: inline;
+  }
 }
-
-.link > h4 {
-  display: inline;
-}
-/*# sourceMappingURL=app.css.map */

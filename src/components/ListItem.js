@@ -5,6 +5,7 @@ const ListItem = ({ type, item, getImage }) => {
   return (
     <div className={`list-item ${type}`}>
       <Link
+        className={"link"}
         to={`/${type.slice(0, type.length - 1)}/${item.name}`}
         key={item.name}
       >
@@ -15,8 +16,17 @@ const ListItem = ({ type, item, getImage }) => {
         />
         <h3>{item.name}</h3>
       </Link>
-      {type === "songs" && <h4>{item.album}</h4>}
-      {(type === "albums" || type === "songs") && <h4>{item.artist}</h4>}
+
+      {type === "songs" && (
+        <Link className={"link"} to={`/album/${item.album}`}>
+          <h4>{item.album}</h4>
+        </Link>
+      )}
+      {(type === "albums" || type === "songs") && (
+        <Link className={"link"} to={`/artist/${item.artist}`}>
+          <h4>{item.artist}</h4>
+        </Link>
+      )}
     </div>
   );
 };
