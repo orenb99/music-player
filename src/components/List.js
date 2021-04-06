@@ -52,9 +52,11 @@ const List = ({ type }) => {
   return (
     <div className={`${type} container`}>
       <h1>{type}</h1>
-      {topFive(typeList).map((item) => (
-        <ListItem item={item} type={type} getImage={getImage} />
-      ))}
+      <div className={`${type} list`}>
+        {topFive(typeList).map((item) => (
+          <ListItem item={item} type={type} getImage={getImage} />
+        ))}
+      </div>
     </div>
   );
 };

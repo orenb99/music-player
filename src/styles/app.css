@@ -1,17 +1,57 @@
-.albums-cover {
-  width: 240px;
-  height: 240px;
+.container {
+  margin: 10px;
+  border-style: solid;
 }
 
-.artists-cover {
-  width: 240px;
-  height: 240px;
+.container > h1 {
+  position: relative;
+  text-transform: capitalize;
+  font-size: 40px;
+  left: 15vw;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list-item {
+  background-color: red;
+  width: 270px;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.list-item.artists {
+  height: 300px;
+}
+
+.list-item.albums {
+  height: 325px;
+}
+
+.list-item.songs {
+  height: 345px;
+}
+
+.cover {
+  width: 270px;
+  height: 270px;
+}
+
+.cover.artists {
   border-radius: 50%;
 }
 
 .link {
   text-decoration: none;
   color: unset;
+}
+
+.link > h3 {
+  display: inline;
 }
 
 .link > h4 {

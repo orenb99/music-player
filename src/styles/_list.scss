@@ -1,0 +1,14 @@
+.container {
+  margin: 10px;
+  border-style: solid;
+  & > h1 {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 40px;
+    left: 15vw;
+  }
+}
+
+.list {
+  display: flex;
+}

@@ -1,15 +1,33 @@
-.albums-cover {
-  width: 240px;
-  height: 240px;
+.list-item {
+  background-color: red;
+  width: 270px;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  &.artists {
+    height: 300px;
+  }
+  &.albums {
+    height: 325px;
+  }
+  &.songs {
+    height: 345px;
+  }
 }
-.artists-cover {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
+.cover {
+  width: 270px;
+  height: 270px;
+  &.artists {
+    border-radius: 50%;
+  }
 }
+
 .link {
   text-decoration: none;
   color: unset;
+  & > h3 {
+    display: inline;
+  }
   & > h4 {
     display: inline;
   }
