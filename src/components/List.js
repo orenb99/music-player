@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import songs from "../data/songs.json";
 import playlists from "../data/playlists.json";
 import artists from "../data/artists.json";
 import albums from "../data/albums.json";
 import { artistImgs, albumImgs, playlistImgs } from "../data/imgs/imgArray";
+import ListItem from "./ListItem";
 
 function topFive(list) {
   list.sort((a, b) => b.views - a.views);
@@ -43,28 +43,17 @@ const List = ({ type }) => {
   }, []);
 
   function getImage(type, item) {
-    if (type === "songs") {
-      return imgArr.find(
-        (value) =>
-          value.name === albums.find((value) => value.name === item.album).cover
-      ).img;
-    } else return imgArr.find((value) => value.name === item.cover).img;
+    let copy = { ...item };
+    if (type === "songs")
+      copy = albums.find((value) => value.name === copy.album);
+    return imgArr.find((value) => value.name === copy.cover).img;
   }
 
   return (
     <div className={`${type} container`}>
       <h1>{type}</h1>
       {topFive(typeList).map((item) => (
-        <Link
-          to={`/${type.slice(0, type.length - 1)}/${item.name}`}
-          key={item.name}
-        >
-          <img
-            className={`${type}-cover`}
-            src={getImage(type, item)}
-            alt={item.name}
-          />
-        </Link>
+        <ListItem item={item} type={type} getImage={getImage} />
       ))}
     </div>
   );
