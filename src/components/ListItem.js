@@ -2,11 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ListItem = ({ type, item, getImage }) => {
+  {
+    console.log(item.ID);
+  }
   return (
     <div className={`list-item ${type}`}>
       <Link
         className={"link"}
-        to={`/${type.slice(0, type.length - 1)}/${item.name}`}
+        to={`/${type.slice(0, type.length - 1)}/${item.ID}`}
         key={item.name}
       >
         <img

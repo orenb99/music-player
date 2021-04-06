@@ -17,7 +17,7 @@ function App() {
         </Link>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/song/:name" component={Song} />
+          <Route path="/song/:id" component={Song} />
           <Route path="/album/:name" component={Album} />
           <Route path="/artist/:name" component={Artist} />
           <Route path="/playlist/:name" component={Playlist} />
