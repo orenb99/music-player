@@ -49,6 +49,7 @@ const List = ({ type }) => {
       <div className={`${type} list`}>
         {topFive(typeList).map((item) => (
           <ListItem
+            key={item.ID}
             item={item}
             type={type}
             imgArr={imgArr}

@@ -7,7 +7,7 @@ import { getImage } from "../App";
 const Song = ({ match }) => {
   const song = songs.find((value) => value.ID === match.params.id);
   const newLyrics = song.lyrics.split("\n").map((str, index) => (
-    <p>
+    <p key={`r${index}`}>
       {str}
       <br />
     </p>

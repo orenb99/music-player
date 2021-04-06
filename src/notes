@@ -3,7 +3,8 @@ shit to do
     calculate views (Done)
     making it like spotify (kinda?)
     finish the lyrics(only Divisions left)
-    find a way to use getImage only once
+    find a way to use getImage only once (Done)
+    make get imgs and the database a params to pass to children
     get more shit to the database 
     get error stuff
     style 
