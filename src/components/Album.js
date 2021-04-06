@@ -7,6 +7,7 @@ import { getImage } from "../App";
 
 const Album = ({ match }) => {
   const album = albums.find((value) => value.ID === match.params.id);
+  console.log(album);
   return (
     <div className="album-page">
       <img src={getImage("albums", album, albumImgs)} />

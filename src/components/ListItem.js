@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import artists from "../data/artists.json";
+import albums from "../data/albums.json";
+import { albumImgs } from "../data/imgs/imgArray";
 
 const ListItem = ({ type, item, getImage }) => {
   return (
@@ -15,13 +18,21 @@ const ListItem = ({ type, item, getImage }) => {
       </Link>
 
       {type === "songs" && (
-        <Link className={"link"} to={`/album/${item.ID}`}>
+        <Link
+          className={"link"}
+          to={`/album/${albums.find((album) => album.name === item.album).ID}`}
+        >
           <br />
           <h4>{item.album}</h4>
         </Link>
       )}
       {(type === "albums" || type === "songs") && (
-        <Link className={"link"} to={`/artist/${item.ID}`}>
+        <Link
+          className={"link"}
+          to={`/artist/${
+            artists.find((artist) => artist.name === item.artist).ID
+          }`}
+        >
           <br /> <h4>{item.artist}</h4>
         </Link>
       )}

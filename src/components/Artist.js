@@ -9,6 +9,7 @@ import { getImage } from "../App";
 
 const Artist = ({ match }) => {
   const artist = artists.find((value) => value.ID === match.params.id);
+  console.log(artist);
   return (
     <div className="artist-page">
       <h1>{artist.name}</h1>
