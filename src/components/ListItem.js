@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ListItem = ({ type, item, imgArr, getImage }) => {
+const ListItem = ({ type, item, getImage }) => {
   return (
     <div className={`list-item ${type}`}>
       <Link
@@ -9,11 +9,7 @@ const ListItem = ({ type, item, imgArr, getImage }) => {
         to={`/${type.slice(0, type.length - 1)}/${item.ID}`}
         key={item.name}
       >
-        <img
-          className={`${type} cover`}
-          src={getImage(type, item, imgArr)}
-          alt={item.name}
-        />
+        <img className={`${type} cover`} src={getImage()} alt={item.name} />
         <br />
         <h3>{item.name}</h3>
       </Link>

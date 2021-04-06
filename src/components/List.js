@@ -5,6 +5,7 @@ import artists from "../data/artists.json";
 import albums from "../data/albums.json";
 import { artistImgs, albumImgs, playlistImgs } from "../data/imgs/imgArray";
 import ListItem from "./ListItem";
+import { getImage } from "../App";
 
 function topFive(list) {
   list.sort((a, b) => b.views - a.views);
@@ -51,7 +52,7 @@ const List = ({ type }) => {
             item={item}
             type={type}
             imgArr={imgArr}
-            getImage={getImage}
+            getImage={() => getImage(type, item, imgArr)}
           />
         ))}
       </div>
